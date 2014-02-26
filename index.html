@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Data Visualization Final Project</title>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	</head>
+	<body>
+		<div id="info-container">
+			<h1>The Relationship between Gini Coefficient and Economic Openness</h1>
+		</div>
+		<div id="canvas-container" class=""></div>
+		<div id="controller-container">
+			<ul class="controller-list year-list"></ul>
+			<ul class="controller-list status-list">
+				<li class="list-item selected" data-display-status="showAll">All</li>
+				<li class="list-item" data-display-status="showDevelopedOnly">Developed Only</li>
+				<li class="list-item" data-display-status="showDevelopingOnly">Developing Only</li>
+			</ul>
+			<ul class="controller-list legend"></ul>
+		</div>
+
+		<script src="js/underscore-min.js"></script>
+		<script src="js/d3.min.js"></script>
+		<script src="js/data.js"></script>
+		<script src="js/script.js"></script>
+
+	</body>
+</html>

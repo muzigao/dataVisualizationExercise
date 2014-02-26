@@ -1,0 +1,144 @@
+body {
+	margin: 30px 0;
+	background: #f1f1f1;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 300;
+	-webkit-font-smoothing: antialiased;
+}
+
+#info-container {
+	float: left;
+	display: block;
+	width: 1100px;
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+	margin-left: 60px;
+	border-bottom: 1px dashed #ccc;
+}
+
+#info-container h1 {
+	color: #2e2e2e;
+	margin: 0;
+	line-height: 2em;
+	text-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+}
+
+#info-container p {
+	margin-top: 0;
+	margin-bottom: 0.3em;
+	font-size: 14px;
+	line-height: 1.25em;
+	color: #a4a8a4;
+	font-family: sans-serif;
+}
+
+
+#canvas-container {
+	float: left;
+	width: 1000px;
+	margin-left: 60px;
+	position: relative;
+}
+
+#controller-container {
+	float: left;
+	width: 120px;
+	margin-left: 10px;
+}
+
+
+/** AXIS **/
+.axis line,
+.axis path {
+	fill: none;
+	stroke: #a4a8a4;
+	shape-rendering: crispEdges;
+}
+.axis .tick text {
+	fill: #a4a8a4;
+	font-size: 14px;
+}
+.axis-label {
+	fill: #4A4E4A;
+	font-size: 16px;
+}
+
+/** CHART **/
+.country-label {
+	font-size: 70px;
+	font-weight: bold;
+	opacity: 0;
+	fill: #ddd;
+}
+circle {
+	cursor: pointer;
+}
+
+circle.developing-country {
+	opacity: 0.5;
+}
+circle.developed-country {
+	opacity:0.9;	
+	
+}
+.showAll .developed-country,
+.showAll .developing-country {
+	display: block;
+}
+
+.showDevelopedOnly .developing-country {
+	display: none;
+}
+
+.showDevelopingOnly .developed-country {
+	display: none;
+}
+
+/** CONTROLLER **/
+#controller-container h4 {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 0.3em;
+}
+
+.controller-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 30px;
+}
+
+.controller-list .list-item {
+	color: #4A4E4A;
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 1.4em;
+	cursor: pointer;
+}
+.controller-list .list-item.selected,
+.controller-list .list-item:hover {
+	color: #4083a9;
+}
+.controller-list .list-item.selected {
+	font-weight: bold;
+}
+
+.controller-list.legend {
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+
+.controller-list.legend .legend-item{
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	display: inline-block;
+	padding: 3px 0;
+	color: #fff;
+	text-align: center;
+	width: 96px;
+	font-size: 12px;
+	font-family: sans-serif;
+	margin-bottom: 0.3em;
+}
+
